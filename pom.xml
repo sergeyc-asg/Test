@@ -20,9 +20,37 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.2</version>
+          <type>maven-plugin</type>
+      </dependency>
+
   </dependencies>
+
+
+    <scm>
+        <url>https://github.com/sergeyc-asg/Test.git</url>
+        <connection>scm:git:ssh://git@github.com/sergeyc-asg/Test.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/sergeyc-asg/Test.git</developerConnection>
+    </scm>
+
 
   <build>
     <finalName>MainArtifact</finalName>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-release-plugin</artifactId>
+              <configuration>
+                  <tagBase>git:ssh://git@github.com/sergeyc-asg/Test/tags</tagBase>
+                  <branchBase>git:ssh://git@github.com/sergeyc-asg/Test/branches</branchBase>
+                  <preparationGoals>clean install</preparationGoals>
+                  <goals>deploy</goals>
+                  <autoVersionSubmodules>true</autoVersionSubmodules>
+              </configuration>
+          </plugin>
+      </plugins>
   </build>
 </project>
