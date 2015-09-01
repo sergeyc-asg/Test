@@ -31,7 +31,7 @@
 
 
     <scm>
-        <developerConnection>scm:git:ssh://git@github.com/sergeyc-asg/Test.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/sergeyc-asg/Test.git</developerConnection>
     </scm>
 
 
