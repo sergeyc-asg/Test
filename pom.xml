@@ -3,10 +3,16 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.company</groupId>
   <artifactId>MainArtifact</artifactId>
-  <packaging>war</packaging>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+
+  <modules>
+    <module>Test2</module>
+  </modules>
+
   <name>MainArtifact Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,6 +21,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
     <finalName>MainArtifact</finalName>
   </build>
