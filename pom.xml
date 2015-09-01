@@ -31,8 +31,6 @@
 
 
     <scm>
-        <url>https://github.com/sergeyc-asg/Test.git</url>
-        <connection>scm:git:ssh://git@github.com/sergeyc-asg/Test.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/sergeyc-asg/Test.git</developerConnection>
     </scm>
 
